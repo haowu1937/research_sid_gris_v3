@@ -1,0 +1,68 @@
+数据集
+数据集目录
+数据集名称
+操作
+区域
+权限
+来源
+semantic_data
+semantic_data
+删除预热
+乌兰察布一
+读写
+WiseMLOps
+data_dir
+service_dis_GR_recall_ulan_preprocess
+删除预热
+乌兰察布一
+读写
+WiseMLOps
+
+
+入口脚本
+run_recdmon_mtp.sh
+
+
+名称
+值
+是否敏感配置
+操作
+ASCEND_PROCESS_LOG_PATH
+/opt/huawei/schedule-train/log/ascend-log
+
+
+path
+tran_orc_to_parquet_irc_preprocessed_2_only_train
+
+
+period
+20260728-000000
+
+
+semantic_path
+20260301/embeddings/20260301_qwen3_emb_06B_name_categories_desc_sd-rank_20260728.parquet
+
+
+step
+train
+
+
+train_config_file
+/opt/huawei/schedule-train/algorithm/train.config
+
+
+version
+RecDMoN_v1_sd_recall_3level
+
+
+
+
+
+sid_train_conf:
+  device: "npu:0"
+  method: "recursive_dmon"
+  graph_type: "adjacent_cooc_prod"
+  recursive_factor: 16
+  recursive_levels: 3
+  recursive_epochs: 100
+  max_dense_nodes: 100000
