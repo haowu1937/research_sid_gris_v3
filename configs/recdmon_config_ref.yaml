@@ -1,0 +1,8 @@
+sid_train_conf:
+  device: "npu:0"
+  method: "recursive_dmon"
+  graph_type: "adjacent_cooc_prod"
+  recursive_factor: 8
+  recursive_levels: 2
+  recursive_epochs: 1
+  max_dense_nodes: 100000

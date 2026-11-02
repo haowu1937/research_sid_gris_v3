@@ -1,0 +1,15 @@
+# Ignore all JSON files
+*.json
+
+# Jupyter notebooks
+*.ipynb
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Optional: ignore notebook checkpoints
+.ipynb_checkpoints/
+*.npy
+
+LETTER-TIGER/ckpt/
